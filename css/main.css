@@ -69,3 +69,15 @@ form button {
 .site-footer {
   padding: 2rem 0;
 }
+
+.skip-link{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: rgb(128, 128, 128);
+  
+}
+
+.skip-link:focus {
+  background-color: black;
+}
