@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div class="container"> 
+  <div class="container">
     <!-- adding a skip link to main content -->
     <a href="#skip-link" class="skip-link">Skip to main content</a>
 
@@ -40,7 +40,7 @@
         omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto
         error voluptatibus.</p>
       <div class="owner">
-        <h2>Meet the owner</h2  >
+        <h2>Meet the owner</h2>
         <ul itemscope itemtype="https://schema.org/Person">
           <li itemprop="name">Name: John Doe</li>
           <li itemprop="jobTitle">Title: CEO</li>
@@ -49,24 +49,26 @@
         </ul>
         <h2>Address</h2>
         <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
+          <span itemprop="Address"> 
+            Jambox Studios
+            123 Guitar Road,
+            Musicville, Danceistan
+            B3T 0L0
+          </span>
         </p>
       </div>
       <div class="contact-section">
         <h2>Contact Us</h2>
         <form action="thanks.html" method="post">
-          
+
           <!-- adding labels -->
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" placeholder="Full Name" required>
-         
-          
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Email" required>
-        
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="Full Name" required>
+
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Email" required>
+
 
           <label for="message">Your Message</label>
           <textarea id="message" name="message" required></textarea>
@@ -79,4 +81,3 @@
     </div>
   </div>
 </body>
-
