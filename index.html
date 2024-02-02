@@ -18,19 +18,19 @@
     <!-- adding a skip link to main content -->
     <a href="#skip-link" class="skip-link">Skip to main content</a>
 
-    <div class="site-header" header role="banner">
+    <header class="site-header" role="banner">
       <h1>Jam Box Studios</h1>
-      <div class="main-nav" nav role="nav">
+      <nav class="main-nav" role="navigation">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Reservation</a></li>
           <li><a href="#">Studio</a></li>
         </ul>
-      </div>
+      </nav>
       <img src="https://placekitten.com/1200/900" alt="cute cat image" class="banner">
-    </div>
-    <div class="main-content" main role="main">
+    </header>
+    <main class="main-content" role="main">
       <section id="skip-link"></section>
       <h2>Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa
@@ -40,6 +40,7 @@
         omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto
         error voluptatibus.</p>
       <div class="owner">
+        
         <h2>Meet the owner</h2>
         <ul itemscope itemtype="https://schema.org/Person">
           <li itemprop="name">Name: John Doe</li>
@@ -47,16 +48,19 @@
           <li itemprop="email">Email: johnjoe@jambox.ca</li>
           <li itemprop="phone">Phone: 613-000-0000</li>
         </ul>
-        <h2>Address</h2>
-        <p>
-          <span itemprop="Address"> 
-            Jambox Studios
-            123 Guitar Road,
-            Musicville, Danceistan
-            B3T 0L0
-          </span>
-        </p>
+
+        <div itemscope itemtype="https://schema.org/PostalAddress">
+          <h2>Address</h2>
+          <p>
+            <span itemprop="addressLocality">Jambox Studios</span>
+            <span itemprop="streetAddress">123 Guitar Road,</span>
+            <span itemprop="addressCountry">Musicville, Danceistan</span>
+            <span itemprop="postalCode">B3T 0L0</span>
+          </p>
+        </div>
       </div>
+
+
       <div class="contact-section">
         <h2>Contact Us</h2>
         <form action="thanks.html" method="post">
@@ -75,9 +79,9 @@
           <button type="submit">Send</button>
         </form>
       </div>
-    </div>
-    <div class="site-footer" footer role="contentinfo">
+    </main>
+    <footer role="contentinfo">
       &copy; 2021 Jam Box Studios
-    </div>
+    </footer>
   </div>
 </body>
